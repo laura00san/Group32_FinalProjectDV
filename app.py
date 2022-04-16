@@ -9,7 +9,8 @@ import pandas as pd
 import plotly.graph_objs as go
 import plotly.express as px
 
-data_moods = pd.read_csv(r'C:\Users\User\Downloads\data_moods.csv')
+path = 'https://github.com/laura00san/Group32_FinalProjectDV/tree/main/data'
+data_moods = pd.read_csv(path + 'data_moods.csv')
 
 #DATASETS FOR ARTISTS COMPARISON
 df_mood = data_moods[data_moods['artist'] !='Various Artists']
